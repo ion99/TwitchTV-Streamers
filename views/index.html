@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwitchTV_Streamers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  <body> 
+    <div class="row container card">
+      <div class="col-xs-9 col-sm-5">
+        <span class="head">TwitchTV STREAMERS</span>
+      </div>
+        <div class="col-xs-5 col-sm-4 col-sm-offset-3">
+          <div class="btn-group-xs" role="group" aria-label="...">
+            <button type="button" class="btn btn-default streams">Streams</button>
+            <button type="button" class="btn btn-default online">Online</button>
+            <button type="button" class="btn btn-default offline">Offline</button>
+            <button type="button" class="btn btn-default closed">Closed</button>
+          </div>
+        </div>  
+    </div>
+    <div class="row container card3 ">
+      <form class="tag navbar-form navbar-left" role="search" >
+        <div class="ui-widget">
+          <label for="tags">Streamer:</label>
+          <input id="tags" onclick="reset();" placeholder="Search">
+            <button type="submit" class="btn-xs btn-default">&#128269</button>
+        </div>
+       </form>
+    </div>
+    <div id="main"></div>
+    <br>
+    <br>
+    <footer id="footer" class="text-center">Ion Gorincioi © 2016. All Rights Reserved :)</footer>
+  </body>  
+</html>
