@@ -1,0 +1,22 @@
+{
+  "name": "twitch_tv_streamers",
+  "version": "1.0.0",
+  "description": "Streams selected twitchtv users",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ion99/TwitchTV-Streamers.git"
+  },
+  "author": "Ion Gorincioi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ion99/TwitchTV-Streamers/issues"
+  },
+  "homepage": "https://github.com/ion99/TwitchTV-Streamers#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
