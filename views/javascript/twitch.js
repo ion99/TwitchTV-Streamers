@@ -7,7 +7,7 @@ function getStreams(username){
     var game = data.game;
     var status = data.status;
     if (status !== null && status !== 422) {
-    result = "<div class='row container card1 " + data.display_name + "'><div class='col-xs-2 col-sm-2'><img src='" + data.logo + "' class='img-circle logo'></div><div class='col-xs-10 col-sm-3 name'><a href=" + data.url + " target='_blank'>" + data.display_name + "</a></div><div id='status' class='col-xs-10 col-sm-7'><span class='hidden-xs'>" + "<b>" + game + "</b>" + " : " + status + "</span></div></div></div>";
+    result = "<div class='row container card1 " + data.display_name + "'><div class='col-xs-2 col-sm-2'><img src='" + data.logo + "' class='img-circle logo'></div><div class='col-xs-10 col-sm-3 name'><a href=" + data.url + " target='_blank'>" + data.display_name + "</a></div><div id='status' class='col-xs-10 col-sm-7'><span class='hidden-xs'><b>" + game + "</b> : " + status + "</span></div></div></div>";
     
     } else if (status === 422){
       result = "<div class='row container card4'><div class='col-xs-2 col-sm-2'><img src='https://cdn4.iconfinder.com/data/icons/simplicio/128x128/notification_error.png' class='img-circle logo'></div><div class='col-xs-10 col-sm-3 name'>" + username + "</div><div id='status' class='col-xs-10 col-sm-7'><span class='hidden-xs'><b>Account Closed</b></span></div></div></div>";
@@ -46,8 +46,6 @@ $(document).ready(function(){
      $(".card1").addClass("hidden");
      $(".card2").addClass("hidden");
    })
-   
-    //$(function() {
     
     $( "#tags" ).autocomplete({
       source: usernames
@@ -65,6 +63,5 @@ $(document).ready(function(){
           usernames.forEach(getStreams);
         }
       })
- // });
 
 })
